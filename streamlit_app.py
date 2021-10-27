@@ -7,7 +7,6 @@ from datetime import datetime
 from sklearn.linear_model import LinearRegression
 import numpy as np
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
 
 def toTimestamp(s:str):
   return time.mktime(datetime.strptime(s, "%Y-%m-%d").timetuple())
