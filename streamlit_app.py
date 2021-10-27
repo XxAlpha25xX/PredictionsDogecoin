@@ -15,6 +15,8 @@ def toTimestamp(s:str):
 def fromTimestamp(s):
   return datetime.fromtimestamp(s).strftime("%Y-%m-%d")
 
+!pip install sklearn
+
 warnings.filterwarnings('ignore')
 
 histo = pd.read_csv("./Dogecoin_history.csv", delimiter=',', header=[0])
