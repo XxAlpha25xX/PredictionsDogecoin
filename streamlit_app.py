@@ -15,6 +15,8 @@ def fromTimestamp(s):
   return datetime.fromtimestamp(s).strftime("%Y-%m-%d")
 
 
+st.title('[Machine-Learning] Dogecoin prediction')
+
 warnings.filterwarnings('ignore')
 
 histo = pd.read_csv("./Dogecoin_history.csv", delimiter=',', header=[0])
